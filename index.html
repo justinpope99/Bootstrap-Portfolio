@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justin Pope Website Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Justin.</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <!-- This adds a hamburger menu icon. -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- This will allow the navbar to collapse on smaller screens -->
+        <!-- We are creating two links for each list item in the navbar. One will only appear on smaller screens and the other will only appear on larger screens. We are doing this so that the menu will collapse once one of the menu items is pressed. This is a way to do it without using a programming language. -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav me-auto my-2 my-lg-0">
+            <li class="nav-item">
+              <a class="nav-link d-lg-none" href="#">
+                <!-- This will not display on large screens (d-lg-none)-->
+                <span data-bs-toggle="collapse" data-bs-target="#navmenu"
+                  >Home</span
+                >
+              </a>
+              <!-- This will not display on non-large screens (d-none d-lg-block)-->
+              <a class="nav-link d-none d-lg-block" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-lg-none" href="#about">
+                <span data-bs-toggle="collapse" data-bs-target="#navmenu"
+                  >About</span
+                >
+              </a>
+              <a class="nav-link d-none d-lg-block" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-lg-none" href="#skills">
+                <span data-bs-toggle="collapse" data-bs-target="#navmenu"
+                  >Skills</span
+                >
+              </a>
+              <a class="nav-link d-none d-lg-block" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-lg-none" href="#projects">
+                <span data-bs-toggle="collapse" data-bs-target="#navmenu"
+                  >Projects</span
+                >
+              </a>
+              <a class="nav-link d-none d-lg-block" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-lg-none" href="#contact">
+                <span data-bs-toggle="collapse" data-bs-target="#navmenu"
+                  >Contact</span
+                >
+              </a>
+              <a class="nav-link d-none d-lg-block" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Hi, I'm <span class="text-info">Justin Pope </span></h1>
+            <p class="lead my-4">
+              I'm a senior at New York City College of Technology pursuing a
+              Bachelor's Degree in Computer Systems.
+            </p>
+            <button
+              class="btn btn-primary btn-lg mb-5"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Contact Me
+            </button>
+          </div>
+          <img
+            class="img-fluid profile-img ps-2 rounded-circle py-3"
+            src="images/20230628_204046.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Profiles -->
+    <section class="bg-primary text-light p-5">
+      <div class="container align-items-center">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 social-header mt-2">
+            <h3>Social Media</h3>
+          </div>
+          <div class="col-md-3 col-sm-6 socials d-inline-flex">
+            <a
+              class="me-2"
+              href="https://www.linkedin.com/in/justin-pope-2a040a102/"
+              target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              class="me-2"
+              href="https://github.com/justinpope99"
+              target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <div class="page-link">
+      <div id="about"></div>
+    </div>
+    <section class="p-5">
+      <div class="container">
+        <div class="col mb-5">
+          <h3 class="mb-3">About Me</h3>
+          <p>
+            I've been passionate about computers since I was 14, which is when I
+            received my first gaming PC. Before I picked one out, I did a lot of
+            research to find out which components I should choose, and that's
+            when I realized I have a passion for technology. I started regularly
+            watching Tech Content Creators and frequenting Tech forums. Since
+            then, I have built 3 additional computers, including an Ethereum
+            mining rig. Eventually, I also became passionate about software
+            development because of my love of video games and my desire to find
+            out how they are created and how they work. That's why I decided to
+            major in Computer Systems.
+            <br />
+            <br />
+            My degree focuses on Software Development and Web Development. I've
+            learned multiple programming languages such as Java, C#, Python,
+            JavaScript, and PHP. I've also learned about Software Design,
+            Flowcharts, and UML. Additionally, I have a solid foundation in Data
+            Structures and Algorithms, as well as Discrete Mathematics.
+          </p>
+        </div>
+        <div class="col">
+          <h3 class="mb-3">Education</h3>
+          <ul class="list-group">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start"
+            >
+              <div class="ms-2 me-auto d-flex">
+                <div class="fw-bold pe-2">
+                  <i class="bx bxs-building education-icons fs-3"></i>
+                </div>
+                <div class="fs-6">CUNY New York City College of Technology</div>
+              </div>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start"
+            >
+              <div class="ms-2 me-auto d-flex">
+                <div class="fw-bold pe-2">
+                  <i class="bx bxl-c-plus-plus education-icons fs-3"></i>
+                </div>
+                <div class="fs-6">
+                  Bachelor of Technology in Computer Systems
+                </div>
+              </div>
+            </li>
+            <li
+              class="list-group-item d-flex justify-content-between align-items-start"
+            >
+              <div class="ms-2 me-auto d-flex">
+                <div class="fw-bold pe-2">
+                  <i class="bx bxs-time education-icons fs-3"></i>
+                </div>
+                <div class="fs-6">Aug 2020 - Dec 2024</div>
+              </div>
+            </li>
+          </ul>
+          <div class="d-flex mt-4 align-items-center pt-2">
+            <div class="pb-1">
+              <i class="bx bxs-spreadsheet education-icons pe-2 fs-3"></i>
+            </div>
+            <div>
+              <h4 class="pe-3">Resume:</h4>
+            </div>
+            <div class="pb-1">
+              <a href="#" class="fs-5 text-decoration-none">Resume.pdf</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <div class="page-link">
+      <div id="skills"></div>
+    </div>
+    <section class="bg-light text-dark p-5">
+      <h3 class="text-center">Technical Skills</h3>
+      <div class=".container my-5">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12 skill-container">
+            <div class="skill-item align-items-center">
+              <h4 class="skill-description text-center mb-3 fs-4">Java</h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://www.flaticon.com/free-icons/java"
+                  title="java icons"
+                  target="_blank"
+                  ><img src="images/java.png" alt=""
+                /></a>
+              </div>
+              <div class="skill-level">Intermediate</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 skill-container">
+            <div class="skill-item align-items-center">
+              <h4 class="skill-description text-center mb-3 fs-4">Python</h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://www.flaticon.com/free-icons/python"
+                  title="python icons"
+                  target="_blank"
+                  ><img src="images/python.png" alt=""
+                /></a>
+              </div>
+              <div class="skill-level">Beginner</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 skill-container">
+            <div class="skill-item align-items-center">
+              <h4 class="skill-description text-center mb-3 fs-4">
+                JavaScript
+              </h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://www.flaticon.com/free-icons/java"
+                  title="java icons"
+                  target="_blank"
+                  ><img src="images/java-script.png" alt=""
+                /></a>
+              </div>
+              <div class="skill-level">Beginner</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 skill-container">
+            <div class="skill-item align-items-center">
+              <h4 class="skill-description text-center mb-3 fs-4">PHP</h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://www.flaticon.com/free-icons/php"
+                  title="php icons"
+                  target="_blank"
+                  ><img src="images/php.png" alt=""
+                /></a>
+              </div>
+              <div class="skill-level">Beginner</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 skill-container">
+            <div class="skill-item align-items-center">
+              <h4 class="skill-description text-center mb-3 fs-4">HTML5</h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://www.flaticon.com/free-icons/html-5"
+                  title="html 5 icons"
+                  target="_blank"
+                  ><img src="images/html-5.png" alt=""
+                /></a>
+              </div>
+              <div class="skill-level">Intermediate</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 skill-container">
+            <div class="skill-item align-items-center">
+              <h4 class="skill-description text-center mb-3 fs-4">CSS3</h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://www.flaticon.com/free-icons/css-3"
+                  title="css 3 icons"
+                  target="_blank"
+                  ><img src="images/css-3.png" alt=""
+                /></a>
+              </div>
+              <div class="skill-level">Beginner</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 skill-container">
+            <div class="skill-item align-items-center">
+              <h4 class="skill-description text-center mb-3 fs-4">C#</h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://www.flaticon.com/free-icons/c-sharp"
+                  title="c sharp icons"
+                  target="_blank"
+                  ><img src="images/c-sharp.png" alt=""
+                /></a>
+              </div>
+              <div class="skill-level">Beginner</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 skill-container">
+            <div class="skill-item align-items-center">
+              <h4 class="skill-description text-center mb-3 fs-4">SQL</h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://www.flaticon.com/free-icons/database"
+                  title="database icons"
+                  target="_blank"
+                  ><img src="images/sql-server.png" alt=""
+                /></a>
+              </div>
+              <div class="skill-level">Intermediate</div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 skill-container">
+            <div class="skill-item align-items-center">
+              <h4 class="skill-description text-center mb-3 fs-4">VS Code</h4>
+              <div class="d-flex justify-content-center">
+                <a
+                  href="https://iconape.com/wp-content/png_logo_vector/visual-studio-code.png"
+                  target="_blank"
+                  ><img src="images/visual-studio-code.png" alt=""
+                /></a>
+              </div>
+              <div class="skill-level">Intermediate</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Projects -->
+    <div class="page-link bg-light">
+      <div id="projects"></div>
+    </div>
+    <section class="p-5 bg-dark text-light">
+      <h2 class="mb-5 text-center fs-1 text-info">Projects</h2>
+      <div class="container">
+        <div class="row align-items-start justify-content-between">
+          <!-- Project 1 -->
+          <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <div class="fs-4 text-center pb-3 fw-semibold">
+              College Enrollment Website
+            </div>
+            <div class="text-center pb-3 w-75 d-inline-flex">
+              <p>
+                Built a College Enrollment website using HTML, Java, JSP, SQL,
+                MVC, and the Eclipse IDE. The website was designed with a
+                responsive UI that allows the user to enroll or drop courses, by
+                using the JDBC API to execute SQL queries and statements.
+              </p>
+            </div>
+            <div class="project-image pb-3">
+              <a
+                href="https://www.flaticon.com/free-icons/seo-and-web"
+                title="seo and web icons"
+                target="_blank"
+                ><img class="w-50" src="images/java-code.png" alt=""
+              /></a>
+            </div>
+            <div class="project-link mb-5">
+              <a
+                class="text-decoration-none fw-bold text-info"
+                href="https://github.com/justinpope99/java-web-application"
+                target="_blank"
+                >Project URL</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <div class="fs-4 text-center pb-3 fw-semibold">
+              Bakery Store Application
+            </div>
+            <div class="text-center pb-3 w-75 d-inline-flex">
+              <p>
+                Developed a C# Bakery Store application using C#, SQL, and
+                Microsoft Visual Studio. Designed and produced an event-driven
+                C# application that displays bakery items along with their name,
+                price, description and images from an SQL database and allows a
+                user to add items to a cart and order them.
+              </p>
+            </div>
+            <div class="project-image pb-3">
+              <a
+                href="https://www.flaticon.com/free-icons/c-sharp"
+                title="c sharp icons"
+                target="_blank"
+                ><img class="w-50" src="images/c-sharp-code.png" alt=""
+              /></a>
+            </div>
+            <div class="project-link mb-5">
+              <a class="text-decoration-none fw-bold text-info" href="#"
+                >Project URL</a
+              >
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-md-4 col-sm-6 col-xs-12 text-center">
+            <div class="fs-4 text-center pb-3 fw-semibold">
+              Personal Website Portfolio
+            </div>
+            <div class="text-center pb-3 w-75 d-inline-flex">
+              <p>Personal Portfolio Website developed using HTML and CSS.</p>
+            </div>
+            <div class="project-image pb-3">
+              <a
+                href="https://www.flaticon.com/free-icons/business-and-finance"
+                title="business-and-finance icons"
+                ><img class="w-50" src="images/web-browser.png" alt=""
+              /></a>
+            </div>
+            <div class="project-link mb-5">
+              <a class="text-decoration-none fw-bold text-info" href="#"
+                >Project URL</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <div class="page-link">
+      <div id="contact"></div>
+    </div>
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Name:</span> Justin Pope
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Location:</span> New York City
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email:</span> justinmps12@gmail.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">LinkedIn:</span>
+                <a
+                  class="text-decoration-none fw-semibold"
+                  href="https://www.linkedin.com/in/justin-pope-2a040a102/"
+                  >LinkedIn Profile</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">GitHub:</span>
+                <a
+                  class="text-decoration-none fw-semibold"
+                  href="https://github.com/justinpope99"
+                  >@justinpope99</a
+                >
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Phone #:</span>
+                (123) 555-5555
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container py-3 text-center">
+        <button
+          class="btn btn-primary btn-lg text-center"
+          data-bs-toggle="modal"
+          data-bs-target="#enroll"
+        >
+          Contact Me
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white position-relative">
+      <div class="container d-flex">
+        <div class="col-md-6 col-xs-12 pt-2">
+          <p class="lead">Copyright &copy; 2024 Justin Pope</p>
+        </div>
+
+        <div class="col-md-6 col-xs-12 pb-2 ms-4 d-flex justify-content-end">
+          <!-- <a href="#" class="position-absolute bottom-0 end-0 p-5" -->
+          <a href="#"><i class="bi bi-arrow-up-circle fs-1"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="enrollLabel">Contact Me!</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill out this form and I'll get back to you</p>
+            <form>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">
+                  First Name:
+                </label>
+                <input type="text" class="form-control" id="first-name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">
+                  Last Name:
+                </label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label"> Email: </label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label"> Phone: </label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+              <div class="mb-3">
+                <label for="project" class="col-form-label">
+                  Message/Project:
+                </label>
+                <textarea class="form-control" id="project" rows="5"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
